@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PokemonQuizz</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bevan" rel="stylesheet">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="outerBorder">
+	<header>Pokemon Quiz</header>
+	<div class="wrapper">
+		<div id="pokemonQuizz">
+			<h2>Choose the type of the pokemon you want to quizz on?</h2>	
+				<select name="pokemon-type" id="pokemon-type">
+					<option value="fire">Fire</option>
+					<option value="water">Water</option>
+					<option value="electric">Electric</option>
+					<option value="flying">Flying</option>
+					<option value="ground">Ground</option>
+					<option value="electric">Electric</option>
+					<option value="fairy">Fairy</option>
+					<option value="rock">Rock</option>
+					<option value="grass">Grass</option>
+					<option value="psychic">Psychic</option>
+					<option value="fighting">Fighting</option>
+					<option value="normal">Normal</option>
+					<option value="ice">Ice</option>
+					<option value="steel">Steel</option>
+					<option value="ghost">Ghost</option>
+					<option value="dragon">Dragon</option>
+				</select>
+		
+			<button class="start-quizz">GO</button>
+			<!-- pokemonQuizz container ends here -->
+			</div>
+
+
+		<div class="hidden findPokemon">
+			<div class="pokemonName"></div>
+			<div class="hidden score"> Score: 0 </div>
+		</div>
+
+			<div class="hidden result"></div>
+
+			<!-- <div id="hidden pokemonEvolution">
+				<div class="evolutionResult"></div>
+			</div> -->
+
+	<!-- wrapper ends here -->
+		</div>
+	<!-- outerBorder div ends here -->
+	</div> 		
+</body>
+<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="javascript/script1.js" type="text/javascript"></script>
+</html>

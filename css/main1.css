@@ -1,0 +1,160 @@
+ *{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color: #eeeeee;
+}
+.hidden { display: none; }
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	margin:0 auto;
+	width: 70%;
+	background-color: #fff;
+	border-radius: 50px;
+	border: 2px solid #cbcbcb;
+	box-shadow: 5px 5px 5px #cbcbcb;
+	background: rgba(0,0,0,0.5);
+	transform: translate(3%,3%);
+}
+
+.wrapper h1{
+	font-family: sans-serif;
+	background-color: #57636e;
+	font-size: 60px;
+	text-align: center;
+	color: #fff;
+	padding: 2px 0px;
+	border-radius: 50px 50px 0 0;
+
+}
+label{
+	min-width: 33%;
+	text-align: center;
+
+}
+
+input:checked + img{
+border: 20px solid #0d1e11d4;
+background-color: #caca2e;
+transition: background-color 0.5s ease;
+}
+
+
+.questionClass{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.questionHeading h2{
+	font-family: sans-serif;
+	font-size: 40px;
+	color: #fde938;
+}
+
+#checkbtn{
+	display: flex;
+	margin: 0 auto;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 7px 3px;
+	/*border-radius: 10px;*/
+	color: white;
+	border: 25px solid transparent;
+	border-bottom-color: rgba(0,0,0,0.35);
+	background: #3500ff;
+	cursor: pointer;
+
+}
+
+#checkbtn:hover{
+	background: hsla(220, 100%, 60%, 1);
+	margin-top: -1px;
+}
+
+.pokemonToEvolve img{
+	height: 200px;
+	width: 200px;
+	
+}
+
+.randomChoice-images{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.radioBtnsClass {
+    visibility: hidden;
+}
+
+.randomChoice-images img{
+	height: 150px;
+	width: 150px;
+	margin: 5px;
+}
+
+progress {
+  height: 25px;
+  width: 300px;
+  margin: 2em auto;
+  padding: 8px;
+  border: 0 none;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: inset 0 -2px 4px rgba(0,0,0,0.4), 0 2px 5px 0px rgba(0,0,0,0.3);
+}
+
+progress::-webkit-progress-bar {  
+	background-color: orange;
+} 
+
+progress::-webkit-progress-value {  
+	background-color: darkblue;
+  -webkit-transition: 0.5s ease-out;
+} 
+.endofQuizz{
+	
+	height:100vh;
+	text-align: center;
+    font-size: 50px;
+    color: brown;
+    font-style: italic;
+    background: rgba(0,0,0,0.3);
+}
+
+
+/*if width is less than or equal to 1100px */
+@media only screen and (max-width: 1100px){
+
+	.wrapper{
+		flex-direction: row wrap;
+	}
+	.questionHeading h2{
+		font-size: 40px;
+	}
+
+/* 2 rows of 3 images each and increase the bottom margin */
+	.randomChoice-images {
+		
+		margin-bottom: 50px;
+		justify-content: space-around;
+	}
+	
+}
+/* if device width is less than or equal to 600px*/
+@media only screen and (max-width: 600px){
+	
+	.wrapper{
+		flex-direction: row wrap;
+	}
+
+	.randomChoice-images {
+		flex-direction: column;
+		width:100%;
+	}
+}

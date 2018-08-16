@@ -1,0 +1,223 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: monospace, sans-serif;
+}
+.outerBorder{
+	border: 15px solid #2B211E;
+	border-radius: 50px;
+	background-image: linear-gradient(to bottom, #ECDEAF, #2B211E);
+
+
+}
+.hidden{display: none;}
+header{
+	font-family: 'Bevan', cursive;
+	font-size: 150px;
+	text-align: center;
+	background:#ECDEAF; 
+	color:#2B211E;
+	font-weight: bold;
+	text-shadow: 0 1px 0 #9F987C,
+               0 2px 0 #9F987C,
+               0 3px 0 #9F987C,
+               0 4px 0 #9F987C,
+               0 5px 0 #9F987C,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+	text-align: center;
+/*	border-bottom: 15px solid #5b453e;
+*/
+    background-image: linear-gradient(to bottom, #ECDEAF, #2B211E);
+
+	border-radius: 12px;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+.wrapper{
+	width:100%;
+	height:100vh;
+	color:#2B211E;
+	background: none repeat scroll 0 0 #756e54; 
+  	margin: 0 auto;
+  	overflow: hidden; 
+  	display: flex;
+  	flex-direction: column;
+  	margin:auto;
+  	background-image: linear-gradient(to bottom, #e0d7b8, #2c1b14)
+ 
+}
+#pokemonQuizz{
+	/*margin-top: 100px;*/
+	margin-left: 100px;
+	
+}
+#pokemonQuizz h2{
+	font-size: 50px;
+	margin-top: 20px;
+	font-family: 'Lobster', cursive;
+	margin-top: 50px;
+	
+}
+#pokemon-type{
+	width: 400px;
+    height: 50px;
+    background-color: #9F987C;
+    font-size: 30px;
+    color:#3D3928;
+    font-weight: bold;
+    margin-top: 50px;
+
+
+}
+.start-quizz img{
+	width:93px;
+	height: 50px;
+   position: relative;
+}
+.start-quizz {
+	
+    background-image: linear-gradient(to bottom, #ECDEAF, #2B211E);
+    border-radius: 10px;
+  font-family: Arial;
+  color: #2b211e;
+  font-size: 30px;
+  padding: 10px 20px 10px 20px;
+  border: solid #2B211E 1px;
+  text-decoration: none;
+	/*color: #2b211e;
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ecdeaf;*/
+}
+.start-quizz :hover {
+  background: #de8399;
+  text-decoration: none;
+}
+.findPokemon{
+	font-size: 50px;
+	font-weight: bold;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pokemonName {
+	flex-grow: 2;
+
+}
+
+
+.result{
+max-width:800px;
+margin: 20px auto;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+flex-flow: row wrap;
+align-content: flex-start;
+
+}
+.result> div{
+/*    border: 4px solid #e91e635c;
+*/    
+border: 4px solid #5a4630;
+border-radius: 10px;
+	box-shadow: 0 1px 5px rgba(0,0,0,.5);
+/* 	background: #4caf5091;
+*/ background-image: linear-gradient(to bottom, #d98632, #524230); 	
+height: 200px;
+	margin: 15px;
+	padding: 5px;
+	width:200px;
+	cursor: pointer;
+
+   }
+
+.pokemonImages img {
+	
+	border-radius: 10px;
+	width: 150px ;
+	height: 150px;
+}
+/*.result img{
+	width:200px;
+	height: 150px;
+	display: inline;
+	transition: filter 2s;
+}*/
+.shadow  { filter: brightness(0);}
+.pokemonImages li{
+	list-style: none;
+	width:180px;
+	height: 180px;
+}
+.active img {
+    filter: none;
+    
+ }
+#reset-next{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+}
+#resetQuizz{
+	color: #2b211e;
+    width: 120px;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ecdeaf;
+}
+#nextPage{
+	color: #2b211e;
+    height: 50px;
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+    background-color: #ecdeaf;
+}
+		
+/* if device width is less than or equal to 600px*/
+@media only screen and (max-width: 700px){
+	
+	header{
+		font-size: 80px;
+	}
+	.wrapper{
+		flex-direction: row;
+		flex-wrap: wrap;
+		height:auto;
+	}
+	.start-quizz{
+		margin-top: 25px;
+	}
+	.pokemonName{
+		margin-right: 50px;
+	}
+	.result{
+		margin-top: 100px;
+	}
+	#reset-next{
+	flex-direction: column;
+	margin:auto;
+	
+	}
+	#nextPage{
+		margin-top: 20px;
+	}
+
+
+}
+ 
+
